@@ -1,0 +1,24 @@
+CREATE TABLE EmployeeDepartment (
+EmpID INT,
+DeptID INT,
+PRIMARY KEY (EmpID, DeptID),
+FOREIGN KEY (EmpID) REFERENCES Employee(EmpID),
+FOREIGN KEY (DeptID) REFERENCES Department(DeptID)
+);
+
+CREATE TABLE EmployeeProjectRole (
+EmpID INT,
+ProjID INT,
+Role VARCHAR(100),
+PRIMARY KEY (EmpID, ProjID),
+FOREIGN KEY (EmpID) REFERENCES Employee(EmpID),
+FOREIGN KEY (ProjID) REFERENCES Project(ProjID)
+);
+
+CREATE TABLE ProjectManager (
+ProjID INT,
+ManagerID INT,
+PRIMARY KEY (ProjID, ManagerID),
+FOREIGN KEY (ProjID) REFERENCES Project(ProjID),
+FOREIGN KEY (ManagerID) REFERENCES Manager(ManagerID)
+);

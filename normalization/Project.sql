@@ -1,0 +1,4 @@
+CREATE TABLE Project (
+ProjID INT PRIMARY KEY,
+ProjName VARCHAR(100)
+);

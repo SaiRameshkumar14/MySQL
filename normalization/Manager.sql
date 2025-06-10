@@ -1,0 +1,4 @@
+CREATE TABLE Manager (
+ManagerID INT PRIMARY KEY,
+ManagerName VARCHAR(100)
+);

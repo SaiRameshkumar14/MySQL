@@ -1,0 +1,8 @@
+CREATE DATABASE Seminar;
+
+USE Seminar;
+
+CREATE TABLE Employee (
+EmpID INT PRIMARY KEY,
+EmpName VARCHAR(100)
+);
